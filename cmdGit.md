@@ -148,7 +148,7 @@ Repositório remoto (GitHub):
 	
 	git remote rm origin												exclui o remoto origin;
 
-	git remote rename origin dindon		renomeia o remoto origin para dindon;
+	git remote rename origin dindon			o "origin" pode ser renomeado por qualquer nome (renomeia o remoto origin para dindon)
 	
 	git remote								exibe repositório remoto;
 	
@@ -162,7 +162,7 @@ Repositório remoto (GitHub):
 	git pull							Incorpora as mudanças do repositório remoto para o branch local;
 
 	git clone git@github.com:hemilioaraujo/cmdGit.git nomePasta		clona repositório do endereço remoto(quando o repositório é pessoal)
-										quando não se é pessoal é necessário realizar um fork 
+ 										quando não se é pessoal é necessário realizar um fork 
 										do repositório para um repositório pessoal;
 	
 	git tag -a 1.0.0 -m "comentário"					gera uma tag de versão, essa tag é criada no github na área de releases.
