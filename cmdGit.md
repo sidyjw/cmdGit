@@ -195,6 +195,9 @@ Branch's(Snapshot):
 
 	git branch -D nomeBranch		Deleta branch selecionado;
 	
+	git push <remote_name> --delete <branch_name>
+	ou
+	git push <remote_name> :<branch_name>   Remove branchs remotos
 
 Rebase e Merge:
 	
@@ -238,7 +241,17 @@ Rebase e Merge:
 
 git reflog:
 
-	Ele é uma espécia de "historico" de tudo o que você faz no git e gera uma chave hash de 7 digitos. 
-	Pode usar ele em combinação com o git reset para desfazer mudanças específicas como desfazer um rebase ou merge.
+	Ele é uma espécia de "historico" de tudo o que você faz no git e gera uma chave hash de 7 digitos.
+	O numero que fica entre os colchetes **HEAD@{0}** indica a posição daquela referencia. (O **{0}** é a
+	posição atual o **{1}** é uma posição antes da atual e assim vai subsequentemente).
+	Pode usar ele em combinação com o git reset para desfazer mudanças específicas como desfazer um rebase ou merge
+	Para desfazer a mudança pode tanto usar a chave **hash** como tambem a posição de referencia **HEAD@{x}** .
 
+git revert:
+
+	O revert cria um novo commit que faz o reverso do commit especificado. Ou seja, se o commit adicionou um arquivo, 
+	o revert remove, se editou uma linha, volta ao que era antes.
+	A diferençe entre o **revert** e o **reset** é que o **revert** permanece com as nossas edições.
+	Visto que ele deixa o commit que fizemos no log é possivel alterar o que deu errado nele mais tarde.
+	Pode usar o *git revert --no-edit* para não editar agora
 
