@@ -236,6 +236,9 @@ Rebase e Merge:
 
 ![casa jpg](images/casa.png)
 
+git reflog:
 
+	Ele é uma espécia de "historico" de tudo o que você faz no git e gera uma chave hash de 7 digitos. 
+	Pode usar ele em combinação com o git reset para desfazer mudanças específicas como desfazer um rebase ou merge.
 
 
